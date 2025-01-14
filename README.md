@@ -1,6 +1,6 @@
 # Satellite-Imagery-in-Economic-Nowcasting
 
-Code from my work about applying satellite imagery in economic nowcasting. Preliminary results and a presentation at the Nationalbank of Ukraine can be found under this [Link](https://bank.gov.ua/en/research/events/279). The paper is currently under review and as soon as it's available I will post it here. The project started as my master thesis in Economics at the LMU Munich and was subsequently further developed by me after graduation.
+Code from my work about applying satellite imagery in economic nowcasting. Preliminary results and my presentation at the Nationalbank of Ukraine can be found under this [Link](https://bank.gov.ua/en/research/events/279). The paper is currently under review and as soon as it's available I will post it here. The project started as my master thesis in Economics at the LMU Munich and was subsequently further developed by me after graduation.
 
 tldr: I exploited very-high-resolution satellite imagery from the Pleiades and Pleiades Neo satellites to nowcast the economic development in Kyiv after the Russian invasion in February 2022. I did so by counting the number of vehicles (cars and trucks) in an area in the west of Kyiv. The change in the number of vehicles reflects the dramatic change in population following the full invasion. This is the main channel of influence for the change in economic activity. For further interpretation or results, the data is unfortunately too scarce. 
 
@@ -32,4 +32,6 @@ The trained models are applied to the image chunks. All detected objects are sto
 By calculating the shortes distance of a vehicle to the next road I can distinguish parking and moving cars approximately. Also I create an excel file with the number of vehicles on each image as well multiple images to display the results. 
 
 ## Results
-![alt text](Intersection_Area.png "Intersection Area")
+![alt text](./dist/figures/Intersection_Area.png "Intersection Area")
+![alt text](./dist/figures/roads_and_obs_2022-03-25.png "Observations in Kyiv - 2022-03-25")
+
